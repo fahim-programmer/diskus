@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+    .center {
+        margin: auto;
+    
+    }
+</style>
+<main class="layout layout--1">
+    <div class="container">
+        <div class="roomList__header">
+          <div>
+            <h2>Getting Started with our API v1</h2>
+            <p>Only Information about rooms and their contents is available freely on a public API, please use /api/room to get information about all rooms
+                , or /api/room/{insert room number that you want} to information specific to that room.
+            </p>
+            <h2><br><br><a class="btn btn--main" href="{% url 'home' %}">
+            Back to Home
+          </a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}
